@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 12px;
+    font-family: Arial, "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+}
+::-moz-selection {
+    background: #ce1500;
+    color: beige;
+}
+::selection {
+    background: #ce1500;
+    color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(204, 51, 51);
+}
+/*原始a标签装饰*/
+a,button {
+    cursor: pointer;
+}
+input:focus,button:focus {
+    outline: 0;
+}
+div {
+    display: block;
+}
+li {
+    list-style: none;
+}
+
+/*页面布局开始*/
+
+.body-wrap {
+    background-image: url("../images/huawen.jpg");
+    position: relative;
+    min-width: 1010px;
+}
+
+.zhongguojie1 {
+    position: fixed;
+    top:195px;
+    left: 15px;
+}
+
+.zhongguojie2 {
+    position: fixed;
+    top:195px;
+    right: 13px;
+}
+
+/*头部开始*/
+.body-head {
+    width: 1010px;
+    height: 115px;
+    margin: auto;
+    overflow: inherit;
+    position: relative;
+}
+
+/*红心代码开始*/
+.love-container {
+    /*原来512px*/
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.heart {
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    left: 50%;
+    margin-left: -35px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image:url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjE3M3B4IiBoZWlnaHQ9IjE1OHB4IiB2aWV3Qm94PSIwIDAgMTczIDE1OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTczIDE1OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjRUY0NjU3IiBkPSJNMTU3LjMzMSwxNS41MDRjLTE5LjU1OS0xOS41NTktNTEuMjcxLTE5LjU1OS03MC44MzEsMGMtMTkuNTU5LTE5LjU1OS01MS4yNzEtMTkuNTU5LTcwLjgzMSwwDQoJYy0xOS41NTksMTkuNTU5LTE5LjU1OSw1MS4yNzEsMCw3MC44MzFsNzAuODMxLDcwLjgzbDcwLjgzMS03MC44M0MxNzYuODksNjYuNzc1LDE3Ni44OSwzNS4wNjQsMTU3LjMzMSwxNS41MDR6Ii8+DQo8L3N2Zz4=");
+}
+.hometown {
+    font-family:'Inconsolata', sans-serif;
+    font-weight: bold;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    color: #f1f1f1;
+}
+
+
+.city {
+    font-family:"Hammersmith One";
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+    /*padding-top: 30px;*/
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+
+
+.heart {
+    animation: HEARTBEAT 2.5s infinite;
+}
+
+@keyframes HEARTBEAT {
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        transform: scale(1.3);
+    }
+    10% {
+        transform: scale(1.1);
+    }
+    15% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes BOUNCE {
+    0% {
+        top: 110px;
+    }
+    10% {
+        top: 80px;
+    }
+    15% {
+        top: 85px;
+    }
+    20% {
+        top: 70px;
+    }
+    75% {
+        top: 110px;
+    }
+    100% {
+        top: 110px;
+    }
+}
+/*红心代码结束*/
+
+
+
+
+.text-wrap {
+    width: 300px;
+    height: 115px;
+    float: right;
+    position: relative;
+}
+
+.top-biaoyu {
+    display: block;
+    position: absolute;
+    height: 30px;
+    left: -210px;
+    top: 20px;
+}
+
+.biaoyu{
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top:65px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.flash-aixin1 {
+    position: absolute;
+    left: 20px;
+}
+.flash-aixin2 {
+    position: absolute;
+    left: 505px;
+}
+
+/*头部结束*/
+
+.body-content {
+    width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+    /*需要修改*/
+    min-height: 780px;
+    /*需要修改*/
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.body-nav {
+    width: 1010px;
+    height: 38px;
+    background: #ce1500;
+    margin-bottom: 10px;
+}
+
+.nav-item {
+    display: inline-block;
+    height: 37px;
+    line-height: 38px;
+    padding: 0 25px;
+    color: #f9fafd;
+    font-size: 14px;
+}
+.sep-line {
+    display: inline-block;
+    height: 18px;
+    margin: 9px 0;
+    color: #9c2300;
+    font-size: 15px;
+}
+
+.nav-item:hover {
+    background: #9c2300;
+}
+
+.footer {
+    overflow: hidden;
+    width: 100%;
+    background-image: url("../images/huawen.jpg");
+    padding: 20px 0;
+}
+
+.footer p {
+    text-align: center;
+}

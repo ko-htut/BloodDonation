@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无偿献血宣传网</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link rel="icon" href="./images/title-icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="./images/title-icon.png" type="image/x-icon">
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<audio autoplay loop>
+	<source src="./swf/love.mp3" >
+	您的浏览器不支持音乐播放。
+</audio>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="space"></span><span class="space"></span><span class="space"></span><span class="space"></span>
+			<span class="keyword">高永华</span><span class="comments">，一位家住福州市郊区却行走在天涯的老农民.</span><br/>
+			<span class="comments">从1997到2009年，12年间，他29次独自一人单骑,</span><br/>
+			<span class="comments">足迹遍布祖国的大江南北。行程十万公里，义务宣传无偿献血.</span><br/>
+			<span class="comments">他用顽强的毅力和坚定的信心创造了前所未有的献血记录.</span><br/>
+			<span class="comments">他拥有全国各地包括港、澳、台地区的<span class="keyword">73</span>本献血证.</span>
+			<span class="comments">总献血量达到<span class="keyword">66680</span>毫升.</span><br/>
+			<br/>
+			<br/>
+			我们每一个人都有独特的价值，珍爱生命，健康成长.<br/>
+			我们每一个人都有生存的权利.<br/>
+			而生命的意义在于奉献,<br/>
+			在于与他人共享生命的美好，共同享受那份感动.<br/>
+			爱能使生命绽放其最绚丽的花朵.<br/>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					这是志愿者的爱心鲜血在其他人的身体中流动的日子
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					  我没见过你，但我祝福你。
+				</div>
+			</div>
+			<a href="main.html" class="btn-change">进入网站</a>
+		</div>
+	</div>
+</div>
+
+<!--这是 0 Days 的日期-->
+<!--together.setFullYear(2016, 12, 37);-->
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(1984, 9, 12);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "您的浏览器不支持 HTML5!<br/>请使用 Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none");
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>

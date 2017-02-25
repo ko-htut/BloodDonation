@@ -1,0 +1,25 @@
+.body-text {
+    width: 1010px;
+    padding: 5px 0px;
+}
+
+.body-text p {
+    text-indent: 2em;
+    line-height: 30px;
+    font-size: 11pt;
+    color: rgb(112, 112, 112);
+}
+
+.body-content {
+    position: relative;
+}
+
+.body-img > img {
+    width: 400px;
+}
+
+.body-img {
+    position: absolute;
+    left: 600px;
+    top: 275px;
+}

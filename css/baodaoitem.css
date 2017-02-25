@@ -1,0 +1,60 @@
+.baodao-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1010px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.baodao-text p{
+    text-indent: 2em;
+    line-height: 30px;
+    font-size: 11pt;
+    color: rgb(112, 112, 112);
+}
+
+.baodao-text h3{
+    text-indent: 2em;
+    line-height: 30px;
+    font-size: 13pt;
+    color: rgb(112, 112, 112);
+}
+
+.baodao-text h4{
+    text-indent: 2em;
+    line-height: 30px;
+    font-size: 12pt;
+    text-align: center;
+    color: rgb(112, 112, 112);
+}
+
+.baodao-text img {
+    width: 480px;
+    display: block;
+    margin: 10px auto;
+}
+
+.body-content {
+    min-height: 930px;
+}
+
+.zyz-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1010px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.zyz-wrap img {
+    display: block;
+    height: 195px;
+    width: 260px;
+    padding: 10px 8px;
+    flex: 0 1 auto;
+    border: 1px solid #ce1500;
+}
+

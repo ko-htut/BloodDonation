@@ -1,0 +1,61 @@
+.zyz-wrap {
+    /*background: yellow;*/
+    width: 1000px;
+    height: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*原：260/185 后:280/200*/
+
+.zyz-item {
+    /*background: green;*/
+    width: 302px;
+    height: 252px;
+    flex: 0 1 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1px 1px;
+}
+
+.zyz-item:hover {
+    border: 1px solid #ce1500;
+    padding: 0 0;
+}
+
+.zyz-item:hover .zyz-title{
+    color: #ce1500;
+}
+
+.zyz-item:hover .zyz-img {
+    width: 280px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.zyz-img-wrap {
+    overflow: hidden;
+    display: block;
+    width: 300px;
+    height: 220px;
+}
+
+.zyz-img {
+    margin: 17px auto;
+    display: block;
+    width: 260px;
+    height: 186px;
+}
+
+.zyz-title {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: #000000;
+}
+
+
+
